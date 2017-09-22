@@ -1,0 +1,12 @@
+version: "2"
+services:
+  gf-guar-pdns-registry:
+    build:
+      context: ./server/
+    image: "gf-guar-pdns-registry"
+    ports:
+      - "53:53"
+      - "53:53/udp"
+      - "127.0.0.1:8081:8081"
+      - "127.0.0.1:53000:53000"
+
