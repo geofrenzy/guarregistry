@@ -16,9 +16,9 @@ Once your API keys are in plate, to use this project from the command line, simp
 In short, it should look something like this:
 ```bash
 # Creating the server
-cd server
-sh delegate.sh
-cd ../
+# in this directory
+docker-compose build
+docker-compose -d up
 
 # Configuring the server
 cd tools
